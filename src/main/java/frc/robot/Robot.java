@@ -106,6 +106,8 @@ public class Robot extends TimedRobot {
       pivot_motor.set(Constants.max_pivot_motor_speed);
     } else if (pivot_down_button.getAsBoolean()) {
       pivot_motor.set(-Constants.max_pivot_motor_speed);
+    } else {
+      pivot_motor.set(0);
     }
   }
 
